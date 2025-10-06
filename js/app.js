@@ -1,13 +1,11 @@
-var personagens = ["Mestre Yoda", "Darth Vader", "Princesa Leia", "Luke Skywalker", "Han Solo"]
-
-personagens.forEach(function(p){
-    console.log(p)
-}) 
-
-for(var i in personagens){
-    console.log(personagens[i])
+var yoda = {
+    name: "Mestre Yoda",
+    age: 900,
+    jedi: true,
+    showsAge: function() {
+        console.log(`A idade do ${this.name} é ${this.age} anos`) 
+    }
 }
 
-for(var i = 0; i <= 10; i++) {
-    console.log(i)
-}
+console.log(yoda)
+yoda.showsAge()
