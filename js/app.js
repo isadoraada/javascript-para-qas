@@ -53,6 +53,15 @@ const App = new Vue({
         like(userName) {
             alert(`O personagem ${userName} foi curtido!`)
         },
+        remove(id) {
+            const allCharacters = this.characters
+            
+            const result = allCharacters.filter(item => {
+                return item.id !== id
+            })
+
+            this.characters = result
+        },
         search() {
             if (this.searchName === '') {
                return alert('Por favor, insira um nome para pesquisar!')
