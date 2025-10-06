@@ -11,10 +11,10 @@ Para este exercício, criamos uma aplicação web chamada **Star Wars Lego**, qu
 ## 🚀 Funcionalidades
 
 - Listagem de personagens com imagens em estilo Lego
-            ![Lista de personagens]("images/listaPersonagens.png")
+            ![Lista de personagens:](images/listaPersonagens.png)
 - 🔍 Busca por personagem
-            ![Busca por Darth Vader]("images/buscaPersonagem.png")
-            ![Nenhum personagem encontrado]("images/nenhumEncontrado.png")
+            ![Busca por Darth Vader:](images/buscaPersonagem.png)
+            ![Nenhum personagem encontrado:](images/nenhumEncontrado.png)
 - Interface responsiva
 - Código estruturado para facilitar testes automatizados
 
@@ -30,15 +30,14 @@ Para este exercício, criamos uma aplicação web chamada **Star Wars Lego**, qu
 
 ## 📦 Como Executar o Projeto
 
-
-# Clone o repositório
+1. **Clone o repositório**
 git clone https://github.com/seu-usuario/star-wars-lego.git
 
-# Acesse a pasta do projeto
+2. **Acesse a pasta do projeto**
 cd star-wars-lego
 
-# Instale as dependências
+3. **Instale as dependências**
 npm install
 
-# Execute o servidor de desenvolvimento
+4. **Execute o servidor de desenvolvimento**
 npm run serve
