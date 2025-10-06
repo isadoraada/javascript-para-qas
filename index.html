@@ -8,8 +8,13 @@
 <body>
     <div id="app">
         <h1>{{ title }}</h1>
-
         <small>Olá, {{ userName }}</small>
+
+        <form>
+            <input placeholder="Pesquise por nome..." v-model="searchName"/>
+            <button type="button" @click="search()">Pesquisar</button>
+        </form>
+
 
         <div class="characters">
             <div class="item" v-for="item of characters">
