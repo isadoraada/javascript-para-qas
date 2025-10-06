@@ -1,13 +1,13 @@
-var gaveteiro = ["Meias", "Gravatas", "Documentos", "Salgadinhos"];
-console.log(gaveteiro[3])
+var personagens = ["Mestre Yoda", "Darth Vader", "Princesa Leia", "Luke Skywalker", "Han Solo"]
 
-gaveteiro.push("Canetas")
-console.log(gaveteiro)
+personagens.forEach(function(p){
+    console.log(p)
+}) 
 
-gaveteiro.pop()
-console.log(gaveteiro)
+for(var i in personagens){
+    console.log(personagens[i])
+}
 
-gaveteiro = gaveteiro.filter(function(p) {
-    return p !== "Meias";
-});
-console.log(gaveteiro);
+for(var i = 0; i <= 10; i++) {
+    console.log(i)
+}
