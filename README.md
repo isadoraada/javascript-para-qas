@@ -31,7 +31,7 @@ Para este exercício, criamos uma aplicação web chamada **Star Wars Lego**, qu
 ## 📦 Como Executar o Projeto
 
 1. **Clone o repositório**
-git clone https://github.com/seu-usuario/star-wars-lego.git
+git clone https://github.com/isadoraada/javascript-para-qas
 
 2. **Acesse a pasta do projeto**
 cd star-wars-lego
