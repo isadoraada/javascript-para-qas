@@ -1,11 +1,51 @@
-var yoda = {
-    name: "Mestre Yoda",
-    age: 900,
-    jedi: true,
-    showsAge: function() {
-        console.log(`A idade do ${this.name} é ${this.age} anos`) 
+const LIST = [
+    {
+        id: 1,
+        name: 'Mestre Yoda',
+        avatar: 'images/yoda.png'
+    },
+    {
+        id: 2,
+        name: 'Luke Skywalker',
+        avatar: 'images/luke.png'
+    },
+    {
+        id: 3,
+        name: 'Princesa Leia',
+        avatar: 'images/leia.png'           
+    },
+    {
+        id: 4,
+        name: 'Han Solo',
+        avatar: 'images/hansolo.png'
+    },
+    {
+        id: 5,
+        name: 'Darth Vader',
+        avatar: 'images/vader.png'
+    },
+    {
+        id: 6,
+        name: 'Chewbacca',
+        avatar: 'images/chewbacca.png'
+    },
+    {
+        id: 7,
+        name: 'R2D2',
+        avatar: 'images/r2d2.png'
+    },
+    {
+        id: 8,
+        name: 'C3PO',
+        avatar: 'images/c3po.png'
     }
-}
+]
 
-console.log(yoda)
-yoda.showsAge()
+const App = new Vue({
+    el: '#app',
+    data: {
+        title: 'Star Wars Lego',
+        userName: 'Isadora', 
+        characters: LIST
+    }
+})
