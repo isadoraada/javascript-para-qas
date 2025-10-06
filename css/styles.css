@@ -1,8 +1,49 @@
+body {
+    background-image: url(../images/bg-space.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #111;
+    color: #CCC;
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+}
+
 #app {
     text-align: center;
-    width: 90%;
-    max-height: 90%;
+    width: 820px;
     margin: auto;
+}
+
+h1 {
+    font-family: "Acme", sans-serif;
+}
+
+.top {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+}
+
+.top h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #fff;
+}
+
+.top form {
+    margin: 0;
+}
+
+.top form {
+    text-align: right;
+}
+
+small {
+    font-size: 1.5em;
+    color: #888;
 }
 
 .characters {
@@ -10,6 +51,78 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.item img {
-    max-width: 80%;
+.characters .item {
+    padding: 20px;
+}
+
+.characters .item img {
+    width: 100%;
+    border-radius: 20%;
+    border: 5px #111 solid;
+}
+
+.characters .item img:hover {
+    border: 5px #FD4 solid;
+}
+
+span {
+    cursor: pointer;
+}
+
+.characters .item .like {
+    color: #FD4;
+}
+
+.characters .item .delete {
+    color: rgb(217, 59, 19);
+}
+
+input {
+    padding: 0.75em 1.25em;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-family: "Handlee", cursive;
+}
+
+button {
+    padding: 0.75em 1.25em;
+    border-radius: 8px;
+    background-color: #FD4;
+    color: #111;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    font-family: "Handlee", cursive;
+}
+
+#custom-alert {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Acme", sans-serif;
+    color: #343333;
+    z-index: 9999;
+}
+
+.alert-box {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px #000;
+}
+
+.alert-box button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: #000;
+    color: #faf9f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
